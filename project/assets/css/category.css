@@ -34,9 +34,7 @@
     background-color: #e7a349;
     color: var(--white-color);
 }
-.category__item:hover {
-    background-color: var(--item-hover-color);
-}
+
 .category__item-wrapper {
     flex-wrap: wrap;
     justify-content: flex-start;

@@ -20,6 +20,7 @@
     padding: 10px 20px;
     background-color: #ddd;
     flex-basis: 75%;
+    border-radius: 8px;
 }
 .cart-title,
 .cart-item {
@@ -31,6 +32,10 @@
 .cart-item {
     min-height: var(--cart-item-height);
     background-color: var(--white-color);
+    border-radius: 4px;
+}
+.cart-item + .cart-item {
+    margin-top: 8px;
 }
 .cart-title {
     height: 50px;
