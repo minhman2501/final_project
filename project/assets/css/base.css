@@ -23,6 +23,9 @@ html {
     box-sizing: border-box;
     background-color: var(--base-color);
 }
+.main {
+    animation: fadeIn .4s ease-in, mainSlideDown .4s ease-in;
+}
 ::-webkit-scrollbar {
     width: 8px;
     height: 4px;
@@ -400,4 +403,20 @@ html {
     flex-direction: column;
     align-items: center;
     font-size: 1.4rem;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes mainSlideDown {
+    from {
+        transform: translateX(10%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }

@@ -1,10 +1,10 @@
 :root {
     --modal-background-color: rgba(234, 219, 174, 0.9);
 }
-.item:hover .buy-modal {
+.item:hover .quick-nav-modal {
     display: flex;
 }
-.buy-modal {
+.quick-nav-modal {
     display: none;
     justify-content: center;
     align-items: center;
@@ -17,9 +17,9 @@
     background-color: var(--modal-background-color);
     --growth-from:0.8;
     --growth-to:1;
-    animation: growUp ease .35s;
+    animation: fadeIn ease .35s;
 }
-.buy-modal .btn {
+.quick-nav-modal .btn {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0;
     padding: 0;
@@ -32,33 +32,26 @@
     transition: ease .2s;
     color: var(--primary-color);
 }
-.buy-modal .btn:hover {
+.quick-nav-modal .btn:hover {
     font-weight: 700;
     border-color: var(--primary-color);
 }
-.buy-modal .btn:nth-child(2){
+.quick-nav-modal .btn:nth-child(2){
     margin-top: 8px;
 }
-.buy-modal .btn--slide-down {
+.quick-nav-modal .btn--slide-down {
     animation: slideDown .35s ease-in-out  ;
 }
-.buy-modal .btn--slide-up {
+.quick-nav-modal .btn--slide-up {
     animation: slideUp .35s ease-in-out  ;
 }
-.buy-modal .btn .product-view,
-.buy-modal .btn .add-to-cart {
+.quick-nav-modal .btn .product-view,
+.quick-nav-modal .btn .add-to-cart {
     display: block;
     padding: 6px 0px;
 }
 
-@keyframes growUp {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 @keyframes slideUp {
     from {
         opacity: 0;
