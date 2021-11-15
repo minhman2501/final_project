@@ -133,7 +133,8 @@
 }
 .exercise__item-name,
 .exercise__item-description,
-.list-student__info-item-link {
+.list-student__info-item-link,
+.project-link {
     text-decoration: none;
     color: var(--text-color);
 }
