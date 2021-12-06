@@ -278,6 +278,8 @@ html {
 }
 .section__item-wrapper {
     overflow: scroll ;
+    flex-wrap: nowrap;
+    height: max-content;
 }
 .header-item {
     font-size: 4rem;
@@ -288,9 +290,8 @@ html {
 }
 .item {
     position:relative;
-    width: 200px;
+    min-width: 200px;
     display: flex;
-    min-width: 120px;
     flex-direction: column-reverse;
     padding: 20px 24px;
     cursor: pointer;
@@ -311,7 +312,6 @@ html {
 }
 .item__img {
     width: calc(100% - 40px);
-    min-width: 60px;
     max-width: 100%;
     margin: 0 auto;
     position: relative;

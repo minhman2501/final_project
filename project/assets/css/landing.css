@@ -149,9 +149,7 @@
     text-align: end;
     font-size: 1.6rem;
 }
-.features__item .item__description * {
-    margin-bottom: 8px;
-}
+
 .feature-item__btns {
     right: 0;
 }
