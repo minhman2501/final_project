@@ -280,6 +280,7 @@ html {
     overflow: scroll ;
     flex-wrap: nowrap;
     height: max-content;
+    padding: 20px 0;
 }
 .header-item {
     font-size: 4rem;
