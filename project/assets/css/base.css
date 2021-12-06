@@ -305,6 +305,7 @@ html {
     max-width: 100%;
     margin: 0 auto;
     position: relative;
+    height: 160px;
 }
 .item__description,
 .item__description * {
