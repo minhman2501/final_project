@@ -28,7 +28,7 @@ html {
 }
 ::-webkit-scrollbar {
     width: 8px;
-    height: 4px;
+    height: 8px;
     
 }
 ::-webkit-scrollbar-thumb {
@@ -269,16 +269,22 @@ html {
 
 .section {
     padding: 40px 20px;
-    min-height: 400px;  
+    height: max-content; 
+
 }
 .section-header {
     font-family: 'Zilla Slab', serif;
+    margin-bottom: 20px;
+}
+.section__item-wrapper {
+    overflow: scroll ;
 }
 .header-item {
     font-size: 4rem;
 }
 .item-wrapper {
     display: flex;
+    gap: 0 10px;
 }
 .item {
     position:relative;
@@ -295,9 +301,13 @@ html {
 } */
 .item-name {
     font-size: 1.6rem;
+    text-transform: capitalize;
 }
 .item-author {
     font-size: 1.2rem;
+}
+.item-price {
+    font-size: 1.4rem;
 }
 .item__img {
     width: calc(100% - 40px);
@@ -307,12 +317,16 @@ html {
     position: relative;
     height: 160px;
 }
-.item__description,
+.item__description {
+    position: relative;
+    
+}
 .item__description * {
+    margin-bottom: 4px;
+}
+.item--horizontal {
     margin-top: 8px;
 }
-
-
 .btn {
    padding: 8px 12px;
    min-width: 30px;
@@ -350,6 +364,7 @@ html {
     border-color: var(--primary-color);
     color:var(--primary-color)
 }
+
 .buy-btns {
     position: absolute;
     bottom: 0;
@@ -358,7 +373,7 @@ html {
     display: block;
     text-align: end;
     font-size: 1.4rem;
-    margin: 20px 0;
+    margin-top: 16px;
 }
 .width-100 {
     width: 100%;
