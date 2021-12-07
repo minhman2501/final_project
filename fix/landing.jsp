@@ -24,7 +24,6 @@
                     <c:if test="${requestScope.ACTIVE_PRODUCT_LIST == null}">
                         <c:redirect url="MainController?action=GetLanding"></c:redirect>
                     </c:if>
-                    
                     <div class="header-nav">
                         <ul class="header-nav__list">
                             <li class="list__item">
@@ -329,6 +328,7 @@
                         <c:forEach items="${requestScope.CATEGORY_LIST}" var="o">
                         	<h3 class="footer-item__detail"><a class="footer-item__detail-link no-deco" href="MainController?action=GetCate&ID=${o.ID}">${o.name}</a></h3>
                         </c:forEach>
+                        
                     </div>
                 </div>
             </div>

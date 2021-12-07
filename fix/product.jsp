@@ -77,175 +77,38 @@
                         </div>
                     </div>
                 </div>
-    
-                <div class="product-review">
-                    <div class="product-review__header section-header">
-                        <h1 class="header-item">Reviews and ratings</h1>
-                    </div>
-                    <div class="product-review__container">
-                        <div class="product-review__overall">
-                            <div class="overall__ratings-summary">4.8 out of 5</div>
-                            <div class="overall__ratings-resutl">
-                                <div class="overall-rating item-rating item-rating--large">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-ratings">
-                            <div class="product-rating">
-                                <div class="product-rating__avatar">
-                                    <img src="./assets/img/male.jpg" alt="" class="avatar__img width-100">
-                                </div>
-                                <div class="product-rating__main">
-                                    <h3 class="client__name">Nguyễn Văn A</h3>
-                                    <div class="item-rating item-rating--medium mt-10">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <p class="client__comment mt-10">This product is very good!</p>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <div class="product-rating__avatar">
-                                    <img src="./assets/img/male.jpg" alt="" class="avatar__img width-100">
-                                </div>
-                                <div class="product-rating__main">
-                                    <h3 class="client__name mt-10">Nguyễn Văn B</h3>
-                                    <div class="item-rating item-rating--medium mt-10">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <p class="client__comment mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed pariatur aut soluta ut reiciendis tenetur voluptas molestias perspiciatis rem dolore voluptate odio aperiam adipisci, incidunt ea qui ratione nihil!</p>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <div class="product-rating__avatar">
-                                    <img src="./assets/img/male.jpg" alt="" class="avatar__img width-100">
-                                </div>
-                                <div class="product-rating__main">
-                                    <h3 class="client__name mt-10">Nguyễn Văn C</h3>
-                                    <div class="item-rating item-rating--medium mt-10">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <p class="client__comment mt-10">This product is very good!</p>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <div class="product-rating__avatar">
-                                    <img src="./assets/img/male.jpg" alt="" class="avatar__img width-100">
-                                </div>
-                                <div class="product-rating__main">
-                                    <h3 class="client__name mt-10">Nguyễn Văn D</h3>
-                                    <div class="item-rating item-rating--medium mt-10">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <p class="client__comment mt-10">This product is very good!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section__container">
-                    <div class="section-header">
-                        <h1 class="header-item">Frequently viewed items</h1>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="item__description">
-                                <h2 class="item-name">Tôi đi code dạo.</h2>
-                                <p class="item-author">Phạm Huy Hoàng</p>
-                            </div>
-                            <div class="item__img">
-                                <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                            </div>
-                            <div class="quick-nav-modal">
-                                <button class="btn btn--slide-down"><a href="/product.html" class="product-view no-deco">View Item</a></button>
-                                <button class="btn btn--slide-up"><a href="" class="add-to-cart no-deco"><i class="fas fa-cart-plus"></i> Add to cart</i></a></button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__description">
-                                <h2 class="item-name">Tôi đi code dạo.</h2>
-                                <p class="item-author">Phạm Huy Hoàng</p>
-                            </div>
-                            <div class="item__img">
-                                <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                            </div>
-                            <div class="quick-nav-modal">
-                                <button class="btn btn--slide-down"><a href="/product.html" class="product-view no-deco">View Item</a></button>
-                                <button class="btn btn--slide-up"><a href="" class="add-to-cart no-deco"><i class="fas fa-cart-plus"></i> Add to cart</i></a></button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__description">
-                                <h2 class="item-name">Tôi đi code dạo.</h2>
-                                <p class="item-author">Phạm Huy Hoàng</p>
-                            </div>
-                            <div class="item__img">
-                                <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                            </div>
-                            <div class="quick-nav-modal">
-                                <button class="btn btn--slide-down"><a href="/product.html" class="product-view no-deco">View Item</a></button>
-                                <button class="btn btn--slide-up"><a href="" class="add-to-cart no-deco"><i class="fas fa-cart-plus"></i> Add to cart</i></a></button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__description">
-                                <h2 class="item-name">Tôi đi code dạo.</h2>
-                                <p class="item-author">Phạm Huy Hoàng</p>
-                            </div>
-                            <div class="item__img">
-                                <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                            </div>
-                            <div class="quick-nav-modal">
-                                <button class="btn btn--slide-down"><a href="/product.html" class="product-view no-deco">View Item</a></button>
-                                <button class="btn btn--slide-up"><a href="" class="add-to-cart no-deco"><i class="fas fa-cart-plus"></i> Add to cart</i></a></button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__description">
-                                <h2 class="item-name">Tôi đi code dạo.</h2>
-                                <p class="item-author">Phạm Huy Hoàng</p>
-                            </div>
-                            <div class="item__img">
-                                <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                            </div>
-                            <div class="quick-nav-modal">
-                                <button class="btn btn--slide-down"><a href="/product.html" class="product-view no-deco">View Item</a></button>
-                                <button class="btn btn--slide-up"><a href="" class="add-to-cart no-deco"><i class="fas fa-cart-plus"></i> Add to cart</i></a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-
         <footer class="footer">
             <div class="footer-nav">
                 <a href="#" class="footer-nav__link no-deco">
                     <i class="fas fa-chevron-up"></i>
                     Back to top</a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content__section">
+                    <h2 class="footer-content__header about__header" style="text-transform: uppercase;">About us</h2>
+                    <div class="footer-content__items">
+                        <h1 class="footer-item__header">Members's Name:</h1>
+                        <h3 class="footer-item__detail">Phạm Hoàng Minh Mẫn</h3>
+                        <h3 class="footer-item__detail">Tân Tiến Đạt</h3>
+                        <h3 class="footer-item__detail">Phạm Ngọc Nhật Huy</h3>
+                    </div>
+                    <div class="about__item about__member-emails">
+                        <h1 class="footer-item__header">Members's email:</h1>
+                        <h3 class="footer-item__detail">19110093@student.hcmute.edu.vn</h3>
+                        <h3 class="footer-item__detail">19110117@student.hcmute.edu.vn</h3>
+                        <h3 class="footer-item__detail">19110082@student.hcmute.edu.vn</h3>
+                    </div>
+                </div>
+                <div class="footer-content__section">
+                    <h2 class="footer-content__header" style="text-transform: uppercase;">Available Category</h2>
+                    <div class="footer-content__items">
+                        <c:forEach items="${requestScope.CATEGORY_LIST}" var="o">
+                            <h3 class="footer-item__detail"><a class="footer-item__detail-link no-deco" href="MainController?action=GetCate&ID=${o.ID}">${o.name}</a></h3>
+                        </c:forEach>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
