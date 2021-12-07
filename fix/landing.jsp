@@ -35,7 +35,7 @@
                             </li>
                             <li class="list__item">
                                 <a href="./category.jsp" class="list__item-link no-deco">
-                                    Categoryyyyyyyyy
+                                    Category
                                     <i class="fas fa-chevron-down"></i>
                                 </a>    
                                 <ul class="list__sub-menu">
@@ -71,7 +71,7 @@
             </header>
     
             <div class="content">
-                <div class="section--popular">
+                <div class="section section--popular">
                     <div class="section-popular__container">
                         <div class="section-header section-popular__header">
                             <h1 class="header-item font-black">Featuring books.</h1>
@@ -267,6 +267,37 @@
                     </div>
                 </div>
                 
+               <div class="section section--reason">
+                    <div class="section-reason__container">
+                        <div class="section-reason__item">
+                            <div class="reason__img">
+                                <img src="./assets/img/books.png" alt="" class="width-100">
+                            </div>
+                            <div class="reason__content">
+                                <h2 class="reason__header" style ="text-transform: capitalize;">content diversity</h2>
+                                <div class="reason__description">Thanks to the variety in the genre of books in this website, you are free to choose the book you love without worrying about the lack of books.</div>
+                            </div>
+                        </div>
+                        <div class="section-reason__item">
+                            <div class="reason__img">
+                                <img src="./assets/img/package.png" alt="" class="width-100">
+                            </div>
+                            <div class="reason__content">
+                                <h2 class="reason__header" style ="text-transform: capitalize;">Careful packaging</h2>
+                                <div class="reason__description">We dedicate ourselves to careful packaging to keep your books fresh and perfect as they get from the store to your home.</div>
+                            </div>
+                        </div>
+                        <div class="section-reason__item">
+                            <div class="reason__img">
+                                <img src="./assets/img/planet-earth.png" alt="" class="width-100">
+                            </div>
+                            <div class="reason__content">
+                                <h2 class="reason__header" style ="text-transform: capitalize;">Environment friendly processes</h2>
+                                <div class="reason__description">The products are packed not only carefully but also using environmentally friendly materials, you can reuse the materials we use for packaging.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -275,6 +306,31 @@
                 <a href="#" class="footer-nav__link no-deco">
                     <i class="fas fa-chevron-up"></i>
                     Back to top</a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content__section">
+                    <h2 class="footer-content__header about__header" style="text-transform: uppercase;">About us</h2>
+                    <div class="footer-content__items">
+                        <h1 class="footer-item__header">Members's Name:</h1>
+                        <h3 class="footer-item__detail">Phạm Hoàng Minh Mẫn</h3>
+                        <h3 class="footer-item__detail">Tân Tiến Đạt</h3>
+                        <h3 class="footer-item__detail">Phạm Ngọc Nhật Huy</h3>
+                    </div>
+                    <div class="about__item about__member-emails">
+                        <h1 class="footer-item__header">Members's email:</h1>
+                        <h3 class="footer-item__detail">19110093@student.hcmute.edu.vn</h3>
+                        <h3 class="footer-item__detail">19110117@student.hcmute.edu.vn</h3>
+                        <h3 class="footer-item__detail">19110082@student.hcmute.edu.vn</h3>
+                    </div>
+                </div>
+                <div class="footer-content__section">
+                    <h2 class="footer-content__header" style="text-transform: uppercase;">Available Category</h2>
+                    <div class="footer-content__items">
+                        <c:forEach items="${requestScope.CATEGORY_LIST}" var="o">
+                        	<h3 class="footer-item__detail"><a class="footer-item__detail-link no-deco" href="MainController?action=GetCate&ID=${o.ID}">${o.name}</a></h3>
+                        </c:forEach>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

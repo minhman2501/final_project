@@ -166,6 +166,33 @@
 	background-color:#F2F5E0
 }
 
+/*reason section*/
+.section--reason {
+    background-color:var(--success-color);
+}
+.section-reason__container {
+    display: flex;
+    gap: 0 10px;
+    justify-content: space-evenly;
+}
+.reason__img {
+    width: 80px;
+    height: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px
+}
+.section-reason__item {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color:var(--white-color);
+    box-shadow: rgb(0 0 0 / 42%) 6px 12px 13px;
+    border-radius: 5px;
+}
+.reason__content {
+    font-size: 2rem;
+}
 
 /* recent section */
 .section-recent__container .item-wrapper {
