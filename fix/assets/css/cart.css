@@ -30,9 +30,10 @@
     align-items: center;
 }
 .cart-item {
-    min-height: var(--cart-item-height);
+    height: max-content;
     background-color: var(--white-color);
     border-radius: 4px;
+    padding: 10px 0;
 }
 .cart-item + .cart-item {
     margin-top: 8px;
@@ -55,8 +56,12 @@
 .cart-item__name,
 .cart-item__info {
     flex:1;
+    
+}
+.cart-item__info {
     display:flex;
     align-items: center;
+    gap: 0 10px;
 }
 .cart-item__price, 
 .cart-item__amount, 
@@ -70,12 +75,8 @@
 }
 
 .info__pic {
-    background-image: url(/${o.image});
-    background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 160px;
 }
 .info__name {
     font-size: 1.6rem;
