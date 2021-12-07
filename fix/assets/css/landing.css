@@ -161,14 +161,12 @@
 }
 
 
-/* reason section */
-.reason__img {
-    display: flex;
-    justify-content: center;
+/*category section*/
+.section--subcategory {
+	background-color:#F2F5E0
 }
-.section-reason__item {
-    width: 100px;
-}
+
+
 /* recent section */
 .section-recent__container .item-wrapper {
     margin-top: 20px;

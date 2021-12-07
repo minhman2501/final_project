@@ -1,3 +1,6 @@
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,59 +20,38 @@
         <div class="wrapper">
             <header class="header">
                 <div class="header-top__wrapper">
-                    <div class="header-top">
-                        <a href="#" class="header__logo no-deco font-black">
-                            <i class="fas fa-bookmark"></i>
-                            Books.
-                        </a>
-                        <div class="header__searchbar">
-                            <input type="text" placeholder="Find your favourite books..." class="searchbar__input">
-                            <div class="searchbar__logo">
-                                <i class="fas fa-search"></i>
-                            </div>   
-                        </div>
-                        <div class="header-right">
-                            <a href="/cart.html" class="shopping-cart__link"><i class="fas fa-shopping-cart header-right__logo"></i></a>
-                            <div class="header-right__user">
-                                <i class="far fa-user header-right__logo"></i>
-                                <ul class="user-menu">
-                                    <li class="sign "><a class="sign__link sign__link--sign-up si no-deco" href="">Sign Up</a></li>
-                                    <li class="sign "><a class="sign__link sign__link--log-in no-deco" href="">Log In</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <jsp:include page="header-top.jsp"/>
+                    <c:if test="${requestScope.ACTIVE_PRODUCT_LIST == null}">
+                        <c:redirect url="MainController?action=GetLanding"></c:redirect>
+                    </c:if>
+                    
                     <div class="header-nav">
                         <ul class="header-nav__list">
                             <li class="list__item">
-                                <a href="/landing.html" class="list__item-link no-deco">Home</a>
+                                <a href="landing.jsp" class="list__item-link no-deco">Home</a>
                             </li>
                             <li class="list__item">
                                 <a href="#" class="list__item-link no-deco">Popular</a>
                             </li>
                             <li class="list__item">
-                                <a href="/category.html" class="list__item-link no-deco">
-                                    Category
+                                <a href="./category.jsp" class="list__item-link no-deco">
+                                    Categoryyyyyyyyy
                                     <i class="fas fa-chevron-down"></i>
-                                </a>
+                                </a>    
                                 <ul class="list__sub-menu">
                                     <ul class="sub-menu__content">
                                         <h3 class="sub-menu__header">Content</h3>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Horror</a></li>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Love</a></li>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Science</a></li>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Educational</a></li>
+                                        <c:forEach items="${requestScope.CATEGORY_LIST}" var="o">
+                                            <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="MainController?action=GetCate&ID=${o.ID}">${o.name}</a></li>
+                                        </c:forEach>
                                     </ul>
                                     <ul class="sub-menu__content">
                                         <h3 class="sub-menu__header">Type</h3>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Used</a></li>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Sales</a></li>
-                                        <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Rare</a></li>
+                                        <c:forEach items="${requestScope.TYPE_LIST}" var="o">
+                                            <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="MainController?action=GetType&ID=${o.ID}">${o.name}</a></li>
+                                        </c:forEach>
                                     </ul>
                                 </ul>
-                            </li>
-                            <li class="list__item">
-                                <a href="#" class="list__item-link no-deco">Bestseller</a>
                             </li>
                         </ul>
                     </div>
@@ -83,7 +65,7 @@
                         <!-- <button class="btn btn--primary">EXPLORE</button> -->
                     </div>
                     <div class="header-bottom__col col-img">
-                        <img src="/assets/img/Heaven-will-be-a-kind-of-library.jpeg" alt="" class="width-100">
+                        <img src="./assets/img/header.jpeg" alt="" class="width-100">
                     </div>
                 </div>
             </header>
@@ -95,36 +77,18 @@
                             <h1 class="header-item font-black">Featuring books.</h1>
                         </div>
                         <div class="section-popular__item-wrapper item-wrapper">
+                            <c:forEach items="${requestScope.ACTIVE_PRODUCT_LIST}" var="o">
                             <div class="section-popular__item">
                                 <div class="popular__img">
-                                    <img src="./assets/img/book1.jpg" alt="" class="width-100">
+                                    <img src="${o.image}" alt="" class="width-100">
                                 </div>
                                 <div class="item__description item__description--popular">
-                                    <h2 class="item-name font-black">Code Dạo Ký Sự</h2>
-                                    <p class="item-author font-black">Phạm Huy Hoàng</p>
-                                    <button class="btn btn--primary"><a href="/product.html" class="product-view no-deco">View Book</a></button>
+                                    <h2 class="item-name font-black">${o.name}</h2>
+                                    <p class="item-author font-black">${o.author}</p>
+                                    <button class="btn btn--secondary"><a href="MainController?action=Detail&ID=${o.ID}" class="product-view no-deco">View Book</a></button>
                                 </div>
                             </div>
-                            <div class="section-popular__item">
-                                <div class="popular__img">
-                                    <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                                </div>
-                                <div class="item__description item__description--popular">
-                                    <h2 class="item-name font-black">Code Dạo Ký Sự</h2>
-                                    <p class="item-author font-black">Phạm Huy Hoàng</p>
-                                    <button class="btn btn--secondary"><a href="/product.html" class="product-view no-deco">View Book</a></button>
-                                </div>
-                            </div>
-                            <div class="section-popular__item">
-                                <div class="popular__img">
-                                    <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                                </div>
-                                <div class="item__description item__description--popular">
-                                    <h2 class="item-name font-black">Code Dạo Ký Sự</h2>
-                                    <p class="item-author font-black">Phạm Huy Hoàng</p>
-                                    <button class="btn btn--secondary"><a href="/product.html" class="product-view no-deco">View Book</a></button>
-                                </div>
-                            </div>
+                            </c:forEach>
                         </div>
                         <a href="/category.html" class="view-all no-deco font-black">View all</a>
                     </div>
@@ -184,44 +148,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item features__item">
-                                    <div class="feature-item__img">
-                                        <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                                    </div>
-                                    <div class="item__description">
-                                        <h2 class="item-name font-black">Code Dạo Ký Sự</h2>
-                                        <p class="item-author font-black">J. K. Rowling</p>
-                                        <p class="item-price font-black">500000 VND</p>
-                                        <div class="feature-item__btns buy-btns">
-                                            <button class="btn btn--buy btn--primary"><a href="/product.html" class="product-view no-deco">View Book</a></button>
-                                            <button class="btn btn--buy btn--secondary"><a href="" class="product-view no-deco">Add to cart</a></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item features__item">
-                                    <div class="feature-item__img">
-                                        <img src="./assets/img/book1.jpg" alt="" class="width-100">
-                                    </div>
-                                    <div class="item__description">
-                                        <h2 class="item-name font-black">Code Dạo Ký Sự</h2>
-                                        <p class="item-author font-black">J. K. Rowling</p>
-                                        <p class="item-price font-black">500000 VND</p>
-                                        <div class="feature-item__btns buy-btns">
-                                            <button class="btn btn--buy btn--primary"><a href="/product.html" class="product-view no-deco">View Book</a></button>
-                                            <button class="btn btn--buy btn--secondary"><a href="" class="product-view no-deco">Add to cart</a></button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             
                         </div>
 
                     </div>
                 </div>
-                <div class="section">
+                <div class="section section--subcategory">
                     <div class="section__container">
                         <div class="section-header">
-                            <h1 class="header-item">Science books</h1>
+                            <h1 class="header-item">Science books</h1> <!-- co the lay ten section tu database xong hien danh sach san pham thuoc category do-->
                         </div>
                         <div class="item-wrapper section__item-wrapper">
                             <div class="item">
@@ -329,21 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="section-reason__container">
-                        <div class="section-reason__item">
-                            <div class="reason__img">
-                                <img src="./assets/img/books.png" alt="" class="width-100">
-                            </div>
-                            <div class="reason__content">
-                                <div class="reason__header">content diversity</div>
-                                <div class="reason__description">Thanks to the variety in the genre of books in this website, you are free to choose the book you love without worrying about the lack of books.</div>
-                            </div>
-                        </div>
-                        <div class="section-reason__item"></div>
-                        <div class="section-reason__item"></div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         
