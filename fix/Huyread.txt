@@ -1,0 +1,9 @@
+cái section sản phẩm của tác giả huy có thể truyền tên tác giả vào thẻ <h2 class="blog__author-name"> được không
+nếu được thì càng tốt với nếu được thì tui nghĩ phải có 1 thuộc tính ảnh cho tác giả đó cho trang trí như tui làm sẵn á
+còn danh sách sản phẩm của tác giả thì huy truyền vào những sách có tên là tác giả đó là được
+
+còn section--subcategory á thì huy muốn làm cứng là chỉ mỗi section Science thôi thì chỉ hiện danh sách sản phẩm có category là Science
+còn không thì huy muốn truyền tên Section vào thẻ h1 của section-header rồi hiện danh sách theo tên category thì càng tốt
+
+tui còn thiếu 2 section là lí do nên mua sách ở web này (tầm phào cho đẹp thôi) với section Sản phẩm tiêu biểu (kiểu hiện 1 sản phẩm thú vị thôi) là xong r
+
