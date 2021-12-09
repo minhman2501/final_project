@@ -269,7 +269,8 @@ html {
 
 .section {
     padding: 40px 20px;
-    height: max-content; 
+    height: max-content;
+    margin-bottom: 40px; 
 
 }
 .section-header {
@@ -401,8 +402,10 @@ html {
 
 .footer {
     background-color: #2B3022;
-    min-height: 100px;
+    height: max-content;
     margin-top: 80px;
+    padding: 40px 0;
+    
 }
 .footer-nav {
     padding: 10px;
@@ -421,6 +424,32 @@ html {
     align-items: center;
     font-size: 1.4rem;
 }
+.footer-content {
+    display: flex;
+    gap: 0 30px;
+}
+
+.footer-content__header {
+    font-size: 2rem;
+    color: var(--rating-color);
+}
+.footer-content__section {
+    width: max-content;
+    /* background-color: var(--white-color); */
+    padding: 20px;
+}
+.footer-content__items {
+    margin: 10px 0;
+}
+.footer-item__header {
+    color: var(--primary-color);
+}
+.footer-item__detail {
+    font-size: 2rem;
+    color: var(--base-color);
+    margin: 8px 0 ;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
